@@ -48,6 +48,9 @@ class ResultFragment : Fragment(), ResultView {
         binding.tvGenre.text = movieModel.Genre
         binding.tvAwards.text = movieModel.Awards
         binding.tvDirector.text = movieModel.Director
+        binding.tvWriter.text = movieModel.Writer
+        binding.tvLanguage.text = movieModel.Language
+        binding.tvCountry.text = movieModel.Country
         Glide.with(binding.imgPoster).load(movieModel.Poster).into(binding.imgPoster)
         Log.e("ololo", "showMovie:$movieModel ")
     }
